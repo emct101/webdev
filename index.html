@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design Agency</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Web Design Agency Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Web Design Agency</h1>
+      <p>We create stunning websites that help your business grow.</p>
+      <a href="#" class="button">Get Started</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+        <ul>
+          <li>
+            <h3>Website Design</h3>
+            <p>We design beautiful and functional websites that are tailored to your business needs.</p>
+          </li>
+          <li>
+            <h3>SEO</h3>
+            <p>We help you rank higher in search engines and get more visitors to your website.</p>
+          </li>
+          <li>
+            <h3>Social Media Marketing</h3>
+            <p>We help you connect with your target audience on social media and grow your brand.</p>
+          </li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-items">
+      <div class="portfolio-item">
+      <img src="{{ url_for('static', filename='portfolio-1.jpg') }}" alt="Portfolio 1">
+      </div>
+        <div class="portfolio-item">
+        <img src="{{ url_for('static', filename='portfolio-2.jpg') }}" alt="Portfolio 2">
+      </div>
+      <div class="portfolio-item">
+      <img src="{{ url_for('static', filename='portfolio-3.jpg') }}" alt="Portfolio 3">
+      </div>
+      </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We're always happy to hear from you. Get in touch today to discuss your project.</p>
+
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Web Design Agency</p>
+  </footer>
+  
+</body>
+</html>
